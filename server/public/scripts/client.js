@@ -8,7 +8,7 @@ function handleReady() {
 
   $('#equal').on('click', handleEqual);
   $('.operator').on('click', operatorId);
- // $('#clear').on('click', clear);
+  $('#clear').on('click', clear);
   getCalcInputs();
 }
 
@@ -63,7 +63,7 @@ function render(inputs) {
 
 $('#inputs').empty();
   for (let input of inputs) {
-    $('#inputs').append(`<li>${input}</li>`)
+    $('#inputs').prepend(`<li>${input}</li>`)
   }
 }
 ///////
